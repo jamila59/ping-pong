@@ -4,7 +4,7 @@ export function Entry(title, body){
 }
 
 
-Entry.prototype.countVowels = function(array){
+export Entry.prototype.countVowels = function(array){
 
   var vowelCount = 0;
   var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
@@ -20,7 +20,7 @@ Entry.prototype.countVowels = function(array){
 };
 
 
-Entry.prototype.countConsonants = function(array){
+export Entry.prototype.countConsonants = function(array){
   var length = array.length;
   var letterCounter = 0;
 
@@ -33,7 +33,7 @@ Entry.prototype.countConsonants = function(array){
 };
 
 
-Entry.prototype.getTeaser = function (array) {
+export Entry.prototype.getTeaser = function (array) {
   for (var i = 0; i < array.length; i++){
   if (array[i] === "." || array[i] === "!" || array[i] === "?") {
     var endpoint = i+1;

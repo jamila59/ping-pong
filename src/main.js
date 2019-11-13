@@ -1,4 +1,7 @@
 import {Entry} from './ping-pong';
+import countVowels from './ping-pong';
+import from countConsonants './ping-pong';
+import from  getTeaser './ping-pong';
 import './styles.css';
 
 $(document).ready(function() {
@@ -15,5 +18,8 @@ $(document).ready(function() {
 
     $("#titleDisplay").text("Hello");
     $("#entryDisplay").text("Hello");
+    $("#entryDisplay").text(journalEntry.countVowels);
+    $("#entryDisplay").text(journalEntry.countConsonants);
+    $("#entryDisplay").text(journalEntry.getTeaser);
   });
 });
